@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* ===== Hero Section ===== */
+.hero {
+  background: url("src/assets/hero.jpg") center/cover no-repeat;
+  height: 85vh;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.rent-btn {
+  background: #ffe600;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rent-btn:hover {
+  background: white;
+  color: #0056b3;
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 60px 80px;
+  background: #f8f9fa;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+/* Fixed logo on top-left */
+.fixed-logo {
+  position: fixed;
+  top: 1rem;      /* distance from top */
+  left: 1rem;     /* distance from left */
+  z-index: 1000;  /* make sure it’s above everything */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional hover effect */
+.fixed-logo:hover {
+  opacity: 0.8;
+}
+.fixed-logo {
+  position: fixed;
+  top: 1rem;      /* distance from top */
+  left: 1rem;     /* distance from left */
+  z-index: 1000;  /* above everything */
+  display: block;
+}
+
+.fixed-logo img {
+  width: 100px;   /* adjust size as needed */
+  height: auto;
+  display: block;
+}
+
+/* Optional: add hover effect */
+.fixed-logo img:hover {
+  opacity: 0.8;
+}
